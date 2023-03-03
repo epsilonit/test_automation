@@ -5,7 +5,7 @@ jobs:
   Move_Labeled_Issue_On_Project_Board:
     runs-on: ubuntu-latest
     steps:
-    - uses: alxarno/move-labeled-or-milestoned-issue@5.7
+    - uses: pauldruziak/move-labeled-or-milestoned-pull-request@v1.0.2
       with:
         action-token: "${{ secrets.PROJECT_AUTOMATION }}"
         project-url: "https://github.com/orgs/epsilonit/projects/1"
