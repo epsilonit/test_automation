@@ -14,3 +14,12 @@ jobs:
         with:
           project-url: https://github.com/orgs/epsilonit/projects/1
           github-token: ${{ secrets.PROJECT_AUTOMATION }}
+
+  add-to-private-project:
+    name: Add issue to private project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v0.4.1
+        with:
+          project-url: https://github.com/orgs/epsilonit/projects/3
+          github-token: ${{ secrets.PROJECT_AUTOMATION }}
